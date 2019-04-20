@@ -4,6 +4,7 @@ import { deleteSmurf } from "../actions";
 
 class Smurf extends Component {
   handleDelete = smurfId => this.props.deleteSmurf(smurfId);
+  handleModify = smurfID => this.props.modifySmurf(smurfID)
 
   render() {
     return (

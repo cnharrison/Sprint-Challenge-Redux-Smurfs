@@ -1,0 +1,15 @@
+.nav { 
+    display: flex;
+    align-items: center; 
+}
+
+nav a { 
+    text-decoration: none;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+nav p { 
+    margin-bottom: 10px;
+    font-family: Pacifico;
+}
