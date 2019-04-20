@@ -25,6 +25,21 @@ export const DELETING = "DELETING";
    D - deleteSmurf
 */
 
+export const deleteSmurf = smurfId => dispatch => {
+  dispatch({ type: DELETING });
+  axios
+    .delete(`http://localhost:3333/smurfs/${smurfId}`)
+    .then(response => {
+      dispatch({
+        type: GET_SMURFS,
+        payload: response.data
+      });
+    })
+    .catch(error => {
+      console.log(error);
+    });
+};
+
 export const addSmurf = smurf => dispatch => {
   axios
     .post("http://localhost:3333/smurfs", smurf)
