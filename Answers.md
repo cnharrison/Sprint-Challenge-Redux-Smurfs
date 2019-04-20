@@ -1,7 +1,7 @@
 1.  Name 3 JavaScript Array/Object Methods that do not produce side-effects? Which method do we use to create a new object while extending the properties of another object?
 
 .map, .filter, .find
-object.assign
+object.assign()
 
 1.  Describe `actions`, `reducers` and the `store` and their role in Redux. What does each piece do? Why is the store known as a 'single source of truth' in a redux application?
 
@@ -15,7 +15,7 @@ store holds the immutable state tree of our application
 application state is the state of all of our components together, component state is the state of one component, such as form with controlled input
 
 1.  What is middleware?
-connects a piece of software, in this case a redux action and a redux reducer. middleware in redux allows us to ttrigger things between the moment an action is dispatched and the moment it reaches therreducer
+connects a piece of software, in this case a redux action and a redux reducer. middleware in redux allows us to trigger things between the moment an action is dispatched and the moment it reaches therreducer
 
 1.  Describe `redux-thunk`, what does it allow us to do? How does it change our `action-creators`?
 
